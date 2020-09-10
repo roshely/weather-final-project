@@ -82,3 +82,14 @@ li {
 .weather-forecast-temperature {
   padding-left: 35px;
 }
+
+#github-link {
+  font-size: 15px;
+  position: relative;
+  bottom: 60px;
+  left: 170px;
+}
+
+#github-link:hover {
+  text-decoration: none;
+}
