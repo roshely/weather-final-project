@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Project</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6bbc76a5d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <form id="search-form">
+          <div class="col-sm-9">
+            <div class="form-group">
+              <input
+                placeholder="Search for a city..."
+                autocomplete="off"
+                id="city-input"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </form>
+      </div>
+      <div class="WeatherInfo">
+        <h1 id="currentCity">yauco</h1>
+        <ul>
+          <li>
+            <div>
+              <span id="day">tuesday</span> <span id="time">10:23</span>
+            </div>
+          </li>
+          <li id="temperature-description">light rain</li>
+        </ul>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="weather-temperature">
+              <i id="weather-icon" class="fas fa-cloud-sun-rain"></i>
+              <span class="temperature"
+                ><strong id="weather-temperature">20</strong
+                ><span class="units"
+                  ><a href="" id="celsius-link">ºC</a> |
+                  <a href="/" id="fahrenheit-link">ºF</a></span
+                ></span
+              >
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div id="weather-details">
+              <ul>
+                <li>humidity: <span id="humidity">64%</span></li>
+                <li>wind: <span id="wind"> 11 mph</span></li>
+                <li>percipitation: <span id="percipitation"> 18% </span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="WeatherForecast">
+        <div class="row">
+          <div class="col-sm">
+            <div class="weather-forecast" id="forecast-5">
+              <h3 class="forecast-temperature">89ºF</h3>
+              <i class="fas fa-cloud-sun"></i>
+              <div class="weather-forecast-temperature">wed | 5</div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="weather-forecast" id="forecast-5">
+              <h3 class="forecast-temperature">90ºF</h3>
+              <i class="fas fa-cloud-sun"></i>
+              <div class="weather-forecast-temperature">thur | 6</div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="weather-forecast" id="forecast-5">
+              <h3 class="forecast-temperature">92ºF</h3>
+              <i class="fas fa-cloud-sun"></i>
+              <div class="weather-forecast-temperature">fri | 7</div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="weather-forecast" id="forecast-5">
+              <h3 class="forecast-temperature">85ºF</h3>
+              <i class="fas fa-bolt"></i>
+              <div class="weather-forecast-temperature">sat | 8</div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="weather-forecast" id="forecast-5">
+              <h3 class="forecast-temperature">87ºF</h3>
+              <i class="fas fa-cloud-showers-heavy"></i>
+              <div class="weather-forecast-temperature">sun | 9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
