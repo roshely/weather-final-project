@@ -1,6 +1,8 @@
 body {
   font-family: Arial, sans-serif !important;
   font-size: 24px;
+  color: white;
+  text-shadow: -1px -1px 0 #330867;
 }
 .container {
   max-width: 900px;
@@ -10,15 +12,12 @@ body {
   background-color: #292b36;
   border-radius: 20px;
   color: white;
-  background-image: linear-gradient(
-    to right,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-  );
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+#search-button {
+  position: relative;
+  bottom: 53px;
+  left: 550px;
 }
 h1 {
   font-size: 30px !important;
@@ -27,6 +26,8 @@ h1 {
   text-align: left;
   margin-bottom: 0;
   font-family: Arial, sans-serif;
+  color: #330867;
+  text-shadow: -1px -1px 0 white;
 }
 
 ul {
